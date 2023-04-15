@@ -1,60 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Landing Page Video</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
+  <head>
+    <title>Quay số may mắn</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Quay số may mắn</h1>
+    <p>Nhấn nút dưới đây để quay số và có cơ hội nhận giải thưởng:</p>
+    <button id="spin-btn">Quay số</button>
+    <p>Khi thắng, chúng tôi sẽ yêu cầu bạn để lại số tài khoản của mình để chúng tôi có thể chuyển khoản giải thưởng cho bạn. Nếu bạn không may mắn, hãy truy cập vào bom.so/323 để nhận thêm lượt quay miễn phí.</p>
+    <p>Nếu bạn muốn có nhiều cơ hội hơn để thắng giải, hãy tải ứng dụng của chúng tôi để quay số trên điện thoại của bạn:</p>
+    <a href="#">Tải ứng dụng</a>
 
-		video {
-			position: fixed;
-			z-index: -1;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-			min-height: 100%;
-			object-fit: cover;
-		}
-
-		.content {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			color: #fff;
-			font-size: 48px;
-			font-weight: bold;
-		}
-
-		.btn {
-			display: inline-block;
-			padding: 20px 40px;
-			background-color: #ff3300;
-			color: #fff;
-			font-size: 24px;
-			font-weight: bold;
-			text-decoration: none;
-			border-radius: 5px;
-			transition: background-color 0.3s ease;
-		}
-
-		.btn:hover {
-			background-color: #ff6600;
-		}
-	</style>
-</head>
-<body>
-	<video autoplay muted loop>
-		<source src="video.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	</video>
-	<div class="content">
-		<h1>Welcome to our website</h1>
-		<p>Watch our video and learn more about us</p>
-		<a href="#" class="btn">Watch now</a>
-	</div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
