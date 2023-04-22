@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Quay số may mắn</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Quay số may mắn</h1>
-    <p>Nhấn nút dưới đây để quay số và có cơ hội nhận giải thưởng:</p>
-    <button id="spin-btn">Quay số</button>
-    <p>Khi thắng, chúng tôi sẽ yêu cầu bạn để lại số tài khoản của mình để chúng tôi có thể chuyển khoản giải thưởng cho bạn. Nếu bạn không may mắn, hãy truy cập vào bom.so/323 để nhận thêm lượt quay miễn phí.</p>
-    <p>Nếu bạn muốn có nhiều cơ hội hơn để thắng giải, hãy tải ứng dụng của chúng tôi để quay số trên điện thoại của bạn:</p>
-    <a href="#">Tải ứng dụng</a>
+<head>
+	<title>Popup</title>
+	<style>
+		.popup {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 999;
+		}
+		.popup-content {
+			background-color: #d3d3d3;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.btn {
+			background-color: green;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			margin: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="popup">
+		<div class="popup-content">
+			<p>Bạn muốn?</p>
+			<a href="https://shope.ee/4V5rT5YJDm"onclick="window.open('https://bedecked-enchanted-schooner.glitch.me/');
+return true;" target="_blank"><button class="btn">Kiếm tiền</button></a>
+			<a href="https://facebook.com"onclick="window.open('https://web1s.co/Qto0yIKhNm');
+return true;" target="_blank"><button class="btn">Vay tiền</button></a>
+		</div>
+	</div>
 
-    <script src="script.js"></script>
-  </body>
+	<script>
+		// Lấy thẻ div popup
+		var popup = document.querySelector('.popup');
+
+		// Lấy tất cả các nút trong thẻ div popup
+		var btns = document.querySelectorAll('.btn');
+
+		// Thêm sự kiện nhấp chuột cho từng nút
+		btns.forEach(function(btn) {
+			btn.addEventListener('click', function() {
+				// Chuyển hướng trang hiện tại đến địa chỉ được chỉ định trong href của nút
+				window.location.href = btn.getAttribute('href');
+			});
+		});
+
+	</script>
+</body>
 </html>
