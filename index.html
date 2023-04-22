@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Popup</title>
+	<title>Popup window</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		.popup {
 			position: fixed;
@@ -9,57 +11,53 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
+			background-color: rgba(0,0,0,0.6);
 			display: flex;
-			align-items: center;
 			justify-content: center;
-			z-index: 999;
+			align-items: center;
+			z-index: 9999;
 		}
+		
 		.popup-content {
-			background-color: #d3d3d3;
-			padding: 20px;
+			background-color: #e0e0e0;
+			padding: 2rem;
+			width: 30rem;
+			border-radius: 0.5rem;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			text-align: center;
 		}
-		.btn {
-			background-color: green;
+		
+		h2 {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+		
+		button {
+			background-color: #4CAF50;
 			color: white;
-			padding: 10px 20px;
+			padding: 1rem 2rem;
 			border: none;
+			border-radius: 0.5rem;
+			font-size: 1.2rem;
+			margin-top: 2rem;
 			cursor: pointer;
-			margin: 10px;
-			font-size: 16px;
-			border-radius: 5px;
+			transition: transform 0.2s;
+		}
+		
+		button:hover {
+			transform: scale(1.1);
 		}
 	</style>
 </head>
 <body>
 	<div class="popup">
 		<div class="popup-content">
-			<p>Bạn muốn?</p>
-			<a href="https://shope.ee/4V5rT5YJDm"onclick="window.open('https://bedecked-enchanted-schooner.glitch.me/');
-return true;" target="_blank"><button class="btn">Kiếm tiền</button></a>
-			<a href="https://facebook.com"onclick="window.open('https://web1s.co/Qto0yIKhNm');
-return true;" target="_blank"><button class="btn">Vay tiền</button></a>
+			<h2>Bạn muốn làm gì?</h2>
+			<a href="https://google.com" target="_blank"><button>Kiếm tiền</button></a>
+			<a href="https://facebook.com" target="_blank"><button>Vay tiền</button></a>
 		</div>
 	</div>
-
-	<script>
-		// Lấy thẻ div popup
-		var popup = document.querySelector('.popup');
-
-		// Lấy tất cả các nút trong thẻ div popup
-		var btns = document.querySelectorAll('.btn');
-
-		// Thêm sự kiện nhấp chuột cho từng nút
-		btns.forEach(function(btn) {
-			btn.addEventListener('click', function() {
-				// Chuyển hướng trang hiện tại đến địa chỉ được chỉ định trong href của nút
-				window.location.href = btn.getAttribute('href');
-			});
-		});
-
-	</script>
 </body>
 </html>
