@@ -154,6 +154,7 @@ return true;"
         </a>
     </div>
 </div>			
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -164,19 +165,22 @@ return true;"
         .popup {
             display: none; /* Ẩn mặc định */
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw; /* Chiếm toàn bộ chiều rộng màn hình */
-            height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px; /* Chiều rộng */
+            height: 300px; /* Chiều cao */
             background-color: white;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 9999;
         }
 
         /* Định dạng cho hình ảnh trong pop-up */
         .popup img {
-            width: 100%; /* Chiều rộng hình ảnh chiếm 100% */
-            height: 100%; /* Chiều cao hình ảnh chiếm 100% */
-            object-fit: cover; /* Đảm bảo ảnh luôn giữ tỷ lệ 1:1 và không bị méo */
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Đảm bảo ảnh vừa vặn với khung */
         }
 
         /* Định dạng cho nút đóng */
@@ -203,7 +207,7 @@ return true;"
 <div class="popup" id="popup-ad">
     <button class="close-btn" onclick="closePopup()">X</button>
     <a href="https://www.f16861.com/?id=333056151&currency=VND&type=2" target="_blank">
-        <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/475206168_1578557586184860_1801494034627604142_n.png?stp=dst-png_p526x296&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=x3DRAqUVQA4Q7kNvgH49omy&_nc_oc=AdiKWKIbxokFpZLtX4KEsur3ZPlTk20jS7telzR29X3Rq8eO9QOLI3ee6w-D1QQxDp2CHdk2_f3r_mJCultmZqMG&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=AAfj7cuoWRjtV5gpl1bouQk&oh=00_AYCcYUKgNLLv-G5CCKYtIG-BlgJQtVxZKDawO3mpOA1O1w&oe=67CBFD0C" alt="Quảng cáo">
+        <img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/475206168_1578557586184860_1801494034627604142_n.png?stp=dst-png_p526x296&_nc_cat=102&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=x3DRAqUVQA4Q7kNvgH49omy&_nc_oc=AdiKWKIbxokFpZLtX4KEsur3ZPlTk20jS7telzR29X3Rq8eO9QOLI3ee6w-D1QQxDp2CHdk2_f3r_mJCultmZqMG&_nc_zt=23&_nc_ht=scontent.fhan15-1.fna&_nc_gid=AVyR2FpXGZYO-g3nz8JojpH&oh=00_AYCUi3TuBFVud4_8CI3Y9douL2aWdg4yMLTCQ_FVetXRsA&oe=67CBFD0C" alt="Quảng cáo">
     </a>
 </div>
 
@@ -225,6 +229,7 @@ return true;"
 
 </body>
 </html>
+
 				
 					</div>
 							</div>
